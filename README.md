@@ -1,3 +1,3 @@
 # Leetcode
 
-我的Leetcode复习本。
+我的Leetcode习题集。
