@@ -7,6 +7,3 @@
 5. All easy questions 101-200
 6. Handpicked question-set2
 7. Review2
-
-## Due dates
-1. 9.20: Bloomberg Blitz Interview
