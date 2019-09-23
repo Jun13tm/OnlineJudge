@@ -1,4 +1,4 @@
-# 我的Leetcode习题集。
+# 我的Leetcode习题集
 ## 练习顺序
 1. All easy questions 0-100
 2. Handpicked question-set1
