@@ -1,8 +1,8 @@
 # Summary
 Difficulty: TODO<br/>
-[Link to problem](url.com)<br/>
+[Link to problem](TODO)<br/>
 ## sol1: TODO%
-![Pic](./pic1.png)
+![Pic](./img1.png)
 TODO
 # Topics
 - TODO
