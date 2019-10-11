@@ -8,5 +8,5 @@ nums里所有重复的数字。可以这么做是因为这个数字出现的第�
 因为是O(n^2)的时间复杂度，可以先sort。</br>
 ## 2st Attempt: 
 # Topics
-- Hash Table
-- Sorting
+- hash
+- sort

@@ -4,4 +4,4 @@ Difficulty: Easy<br/>
 ## sol1: 40ms(31%)
 没什么需要特别注意的
 # Topics
-- Array
+- array

@@ -4,5 +4,4 @@ Difficulty: Easy<br/>
 ## sol1: 32ms(94%)
 一把就过了，没啥特别的。
 # Topics
-- hashmap
-- stack
+- hash

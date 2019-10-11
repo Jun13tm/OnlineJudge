@@ -4,4 +4,4 @@ Difficulty: Easy<br/>
 ## sol1: 80ms(17%)
 经典问题的第二问，O(n)
 # Topics
-- Array
+- array

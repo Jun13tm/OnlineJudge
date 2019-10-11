@@ -4,4 +4,3 @@ Difficulty: Easy<br/>
 ## sol1: 40ms(69%)
 Easy
 # Topics
-- Remove elements
