@@ -8,7 +8,6 @@ class Solution:
     def deleteDuplicates(self, head: ListNode) -> ListNode:
         def removeNode():
             nonlocal parent
-            nonlocal count
             # Don't remove anynode, but advance parent by 1 node
             if count == 1:
                 parent = parent.next

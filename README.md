@@ -21,6 +21,11 @@
 - interval
 - sort
 - dp
+- backtracking
+- binary_tree
+- DFS
+- graph
+- dnc
 
 # Algorithm Tips
 ## Two Pointers
@@ -34,20 +39,11 @@ Q9: 前指针指向index 0，后指针指向index len-1，用while i < j来loop�
 ## Linkedlist
 - Always use a dummy node (so head doesn't need to be handled specifically) <br>
 - while curr vs. while curr.next <br>
-请考虑算法如何handle最后几个Node，两者没有很大的区别。<br>
+请考虑算法如何handle最后几个Node，两者没有很大的区别。while curr looks better though.<br>
 Q82: sol1 vs. sol2 <br>
 
-
-# Python Tips
-## Logrithm
-- math.log(a, Base) <br>
-Q67: decimal -> binary <br/>
-
-## String and list
-- str.join(list): require list to only contain strings <br>
-Q67: decimal -> binary (good example) <br/>
-
-## For-loop
-- for i in reversed(range(5)) <br>
--> 4, 3, 2, 1, 0
-- 
+## Interval
+- Check overlap <br>
+Q252 - sort by start time, or by end time(work backwards)<br> 
+- Arrange as many as possible <br>
+Q435 - sort by end time (greedy approach).
