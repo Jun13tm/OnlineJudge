@@ -1,3 +1,13 @@
+'''
+92: Reverse Linked List 2 Medium 
+    • Complexity:
+        ○ O(n); O(1)
+    • Topics:
+        ○ intervals
+        ○ sort
+sort by start time确保新的interval只需要和前一个interval比较，guarantee与前一个以前的
+interval都不会overlap。
+'''
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         # edge case handling
