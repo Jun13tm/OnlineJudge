@@ -1,13 +1,14 @@
 '''
-	• Complexity:
-		○ O(mn)
-	• Topics
-		○ dp
-brutal force是O((mn)^2)的complexity，naive dp(即在边长为k时，记录所有k*k的位置是不是一个
-valid square，然后在边长k+1时，可以constant time check每一个k+1*k+1的square是否valid）
-的complexity为O(mn^2)。Optimal Solution的dp invariant是，每个tile记录以该tile为右下角
-的square，最长的边长为多少。basically，一次性检查完某一格是否存在边长为1 - n的valid square 
-（对比naive dp的每个tile共检查n次）。解释起来很wordy，可以仔细看看code画图，其实不难。
+• Complexity:
+	○ O(mn); O(mn)
+• Topics
+	○ dp
+• Related
+	○ LC85 Maximal Rectangle
+	○ LC363 Max Sum of Rectangle No Larger Than K
+brutal force complexity为O((mn)^2)，需要找到所有的squares
+dp: invaraint是：每个tile记录以该tile为右下角的square中最长的边长。所以每个tile可通过
+check上面，左边和左上3个tile即可确认本tile的大小 min(up, left, upperleft) + 1
 '''
 class Solution:
     def maximalSquare(self, matrix: List[List[str]]) -> int:
