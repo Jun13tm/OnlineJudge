@@ -9,7 +9,7 @@
 	3. 常规移动时需要先把尾巴的位置remove出occupied set，再重新把头的位置add进occupied set。避免某个位置没有成功没mark
 	4. 食物出现在蛇身上是没问题的，不影响游戏
 	5. 蛇向上行的时候按下会被Collide with body给handle掉，不需要额外handle
-如果食物吃完了，set当前食物的坐标为(-1, -1)
+	6. 如果食物吃完了，设置当前食物的坐标为(-1, -1)
 '''
 from collections import deque
 
@@ -27,12 +27,12 @@ class SnakeGame(object):
         :type food: List[List[int]]
         """
         if width <= 0 or height <= 0:
-            raise ValueError("Width and Height should be greater than 0")
+            raise ValueError("Width and height should be greater than 0")
         self.width = width
         self.height = height
-        # given board can be extremely big, for example: 10000*10000 - one of the text case, causing TLE
-        # therefore, use set((x,y)) instead
-        # self.board = [[0 for _ in range(width)] for _ in range(height)]
+        # given board can be extremely big, for example: 10000*10000 - one of the test case, causing TLE
+        # therefore, use set((x,y)) to mark occupied locations instead
+        # self.board = [[0 for _ in range(width)] for _ in range(height)] - discarded
         self.occupied = set()
         self.foods = food
         self.score = 0
