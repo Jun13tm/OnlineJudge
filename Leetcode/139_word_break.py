@@ -3,7 +3,8 @@
     ○ O(n^2)
 • Topics:
     ○ dp
-确定在任意一个index i是否能成功Break，取决于前面所有index j是否能成功break and s[j,i]是否为一个valid word。注意dp array前面加一个True padding for convenience purpose
+确定在任意一个index i是否能成功Break，取决于前面所有index j是否能成功break and s[j,i]是否为一个valid word。
+注意dp array前面加一个True padding for convenience purpose
 Followup:
      If True, return the fewest number of words that make up this string
 遇到True时不break，而是loop完所有的j index，记录最少的单词数。
