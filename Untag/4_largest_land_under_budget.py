@@ -21,9 +21,9 @@ explanation:
 
 
 1d version:
-end跳过所有价格超过budget的地。如果买不起当前的地，keep moving front to the right，直到
-能买的起当前的地为止。注意，front指向的位置已经被买下，每个iteration，end指向的地尚未正要
-被evaluate，但还未购买。注意不能用end - front去记录Curr_length，之间可能有超过budget的地。
+end跳过所有价格超过budget的地。如果买不起当前的地，keep moving front to the right，直到能买的起当前的地为止。
+注意，front指向的位置已经被买下，每个iteration，end指向的地马上要被evaluate，但还尚未。另外，不能用end - front
+去计算curr_length，因为两个index之间可能有超过budget的地，需要被ignore。
 
 2d version:
 
