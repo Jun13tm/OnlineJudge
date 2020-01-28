@@ -34,5 +34,5 @@ class Solution:
         for i in range(1, len(dp)):
             for j in range(i):
                 if dp[j] >= 0 and s[j:i] in set_:
-                    dp[i] = max(dp[j] + 1, dp[i])
+                    dp[i] = min(dp[j] + 1, dp[i])
         return dp[-1]
