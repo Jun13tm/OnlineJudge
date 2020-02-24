@@ -24,20 +24,21 @@ explanation:
 
 
 1d version:
-end跳过所有价格超过budget的地。如果买不起当前的地，keep moving front to the right，直到能买的起当前的地为止。
-注意，front指向的位置已经被买下，每个iteration，end指向的地马上要被evaluate，但还尚未。另外，不能用end - front
-去计算curr_length，因为两个index之间可能有超过budget的地，需要被ignore。
+end跳过所有价格超过budget的地。如果买不起当前的地，keep moving front to the right，直到
+能买的起当前的地为止。
+注意，front指向的位置已经被买下，每个iteration，end指向的地马上要被evaluate，但还尚未。另外
+，不能用end - front去计算curr_length，因为两个index之间可能有超过budget的地，需要被ignore。
 
-better1d: check below
-
+better1d: 
+区别在于不用手动跳过价格超过budget的地。在front和end都指向超支的地时，front会先移动，此时
+expense变为负，下一次end必然移动，并将expense补充回0。
 
 2d version:
 
 
-
 '''
 class Solution:
-	def largestLand1D(self, lands, budget):
+	def largestLand1d(self, lands, budget):
 		front, expense, curr_length, largest = -1, 0, 0, 0
 
 		for end in range(len(lands)):

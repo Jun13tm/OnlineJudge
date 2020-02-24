@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 def BS(li, target):
     front, end = 0, len(li) - 1
-    while end >= front:
+    while front <= end:
         mid = (front + end) // 2
         if li[mid] == target:
             return mid
