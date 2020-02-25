@@ -4,7 +4,8 @@
         ○ O(1) - fixed number of possible moves
     • Topics: 
         ○ bfs
-比较naive的bfs，可能有更好的Optimization方法。
+比较naive的bfs，可能有更好的Optimization方法。比方说target = 5XXX，但2XXX是一个deadend，
+那么的一个0只能向下拨动。
 '''
 class Solution:
     def openLock(self, deadends: List[str], target: str) -> int:
