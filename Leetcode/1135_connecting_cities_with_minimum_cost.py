@@ -23,9 +23,10 @@ class Solution(object):
         # Add all neighbors of 1
         connections = list(edges[1])
         heapq.heapify(connections)
-        sol = -1
+        sol = 0
 
         while len(connected) < N:
+            # This also handles unconnected graph
             if not connections:
                 return -1
 

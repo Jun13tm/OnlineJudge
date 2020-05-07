@@ -12,9 +12,7 @@ class Solution:
         if target in deadends or "0000" in deadends:
             return -1
         
-        de = set()
-        for deadend in deadends:
-            de.add(deadend)
+        de = set(deadends)
         
         moves = [[1, 0, 0, 0], [-1, 0, 0, 0], [0, 1, 0, 0], [0, -1, 0, 0], [0, 0, 1, 0], [0, 0, -1, 0], [0, 0, 0, 1], [0, 0, 0, -1]]
         queue = [("0000", 0)]
